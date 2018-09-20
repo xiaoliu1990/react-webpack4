@@ -1,0 +1,15 @@
+.doc-app{}
+
+
+.app-header {padding: 10px; background: #f0f0f0;}
+.app-header ul{}
+.app-header li{ float: left;}
+.app-header li a{display: inline-block; color: #25bb13; margin-right: 20px;}
+.app-footer{text-align: center; position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 30px 0px;}
+
+.app-container{padding: 10px;}
+.number {
+  color:red;
+  background: url(../images/react.png) no-repeat; background-size: 100%;
+  width: 620px;height: 160px;
+}
