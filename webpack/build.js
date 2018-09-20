@@ -10,7 +10,7 @@ module.exports = {
     },
     output:{
         path: path.resolve(__dirname, "../dist"),
-		publicPath: "/",
+		publicPath: "../dist",
 		filename: "[name]-[hash].js"
     },
     devServer:{
@@ -62,6 +62,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             path: path.resolve(__dirname, "../dist"),
             template: "template/index.html",
+        }),
+        new webpack.DefinePlugin({
+            'process.env':{
+            'BASE_URL':JSON.stringify('//ajaxUrl'),
+            }
         })
     ]
 }
