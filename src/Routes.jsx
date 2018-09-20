@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import Header from "./modules/Component/Header"
 import Footer from "./modules/Component/Footer"
@@ -17,7 +17,17 @@ const UrlList = () => (
 );
 
 const BasicExample = () => (
-  <BrowserRouter>
+  // <BrowserRouter>
+  //   <div className="doc-app">
+  //     <Header/>
+  //     <div className="app-container">
+  //       <Route exact path="/" component={UrlHome} />
+  //       <Route path="/list" component={UrlList} />
+  //     </div>
+  //     <Footer/>
+  //   </div>
+  // </BrowserRouter>
+  <HashRouter>
     <div className="doc-app">
       <Header/>
       <div className="app-container">
@@ -26,7 +36,7 @@ const BasicExample = () => (
       </div>
       <Footer/>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default BasicExample;
